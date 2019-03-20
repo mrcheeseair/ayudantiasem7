@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Datos del paciente</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="CSS/WebDesignCSS.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <h1>Ingreseg los datos del futuro difunto</h1>
+        
+        
+        <form id="myform" method="get" action="PacienteServlet" >
+            <br>
+            <label>Nombre: </label> <br>
+            <input type="text" name="nombre" id="name"/>
+            <br><br>
+            
+            <label>Apellido: </label> <br>
+            <input type="text" name="apellido" id="apellido"/>
+            <br><br>
+            
+            <label>Género: </label><br>
+            <select name="gender" id="gender">
+                
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Transexual">Transexual</option>
+                <option value="Torta">Torta</option>
+                <option value="PND">Prefiero no decir</option>
+                
+            </select>
+            
+            <br>
+            
+            <br>
+            <label></label>
+            <br>
+            <input type="text" name="sintomas" id="sintomas"/>
+            <br><br>
+            
+            <br>
+            <label>Fecha de Nacimiento<</label><br>
+            <input  type="number" name="birthday" id="brithday"> / <input  type="number" name="birthmonth" id="birthmonth"> / <input  type="number" name="birthyear" id="birthyear">
+            <br><br>
+            
+            <input type="hidden" id="formid" name="formid" value="1"/>
+            <input type="submit" name="formularioDifunto" value="Ingresar Datos"/>
+            
+        </form>
+        
+        
+        
+        <br>
+        <a href="index.html">Volver a pagina principal</a>
+    </body>
+</html>
